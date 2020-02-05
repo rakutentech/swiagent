@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.1.6
+
+- Updated the README.md
+
 ## 0.1.5
 
 - Added \n to the end of bash command in swiagent resource
