@@ -1,6 +1,6 @@
 # swiagent
 
-[![Cookbook Version](https://img.shields.io/cookbook/v/line.svg)](https://supermarket.chef.io/cookbooks/line)
+[![Cookbook Version](https://img.shields.io/cookbook/v/swiagent.svg)](https://supermarket.chef.io/cookbooks/swiagent)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Purpose
