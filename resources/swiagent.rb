@@ -27,7 +27,7 @@ action :install do
 
   unless new_resource.fqdn.nil? || new_resource.password.nil?
     bash 'setup swiagent' do
-      code "echo $'2\n#{new_resource.fqdn}\n3\n''#{new_resource.port}'$'\n4\n''#{new_resource.username}'$'\n5\n''#{new_resource.password}'$'\n7\n' | service swiagentd init"
+      code "echo $'2\n#{new_resource.fqdn}\n3\n''#{new_resource.port}'$'\n4\n''#{new_resource.username}'$'\n5\n''#{new_resource.password}'$'\n7\n\n' | service swiagentd init"
       sensitive true
       not_if 'ps aux | grep swiagent | grep -v grep'
     end

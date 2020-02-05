@@ -1,8 +1,12 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.1.5
+
+- Added \n to the end of bash command in swiagent resource
+
 ## 0.1.3 & 0.1.4
 
-- Added TESTING.md
+- Added testing.md
 
 ## 0.1.2
 
