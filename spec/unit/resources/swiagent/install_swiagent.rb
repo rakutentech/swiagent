@@ -1,6 +1,6 @@
 require 'chefspec_helper'
 
-describe 'swiagent::default' do
+describe 'swiagent::install_swiagent' do
   let(:chef_run) do
     chef_run = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '18.04', step_into: ['swiagent'])
     chef_run.converge(described_recipe)
@@ -15,7 +15,7 @@ describe 'swiagent::default' do
       .with(name: 'solarwinds')
       .with(distribution: 'ubuntu-14')
       .with(trusted: true)
-      .with(uri: 'http://solaror001.intra.rakuten.co.jp/Orion/AgentManagement/LinuxPackageRepository.ashx?path=')
+      .with(uri: 'http://orion.solarwinds.com/Orion/AgentManagement/LinuxPackageRepository.ashx?path=')
   end
 
   it 'installs a package called swiagent' do
