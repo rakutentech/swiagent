@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.1.3
+
+- Added TESTING.md
+
 ## 0.1.2
 
 - Updated the README.md to have the correct cookbook version info
