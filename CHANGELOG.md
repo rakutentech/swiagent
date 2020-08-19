@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.1.7
+
+- Changed the repo URL to use https
+
 ## 0.1.6
 
 - Updated the README.md

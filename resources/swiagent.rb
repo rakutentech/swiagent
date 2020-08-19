@@ -12,11 +12,11 @@ action :install do
       components   ['swiagent']
       distribution 'ubuntu-14'
       trusted      true
-      uri          "http://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path="
+      uri          "https://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path="
     end
   when 'centos'
     yum_repository 'solarwinds' do
-      baseurl "http://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path=/dists/centos-5/$basearch"
+      baseurl "https://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path=/dists/centos-5/$basearch"
       description 'SolarWinds Agent'
       enabled true
       gpgcheck false
