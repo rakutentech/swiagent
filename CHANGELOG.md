@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.2.3
+
+- Added CONTRIBUTING.md
+
 ## 0.2.2
 
 - Removed mentions of Rakuten from within the cookbook
