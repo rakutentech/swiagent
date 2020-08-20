@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.2.2
+
+- Removed mentions of Rakuten from within the cookbook
+
 ## 0.2.1
 
 - Updated the README to contain documentation for the new 'ssl' option

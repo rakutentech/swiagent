@@ -29,7 +29,7 @@ This cookbook provides a resource to download and install the swiagent from Sola
 ```ruby
 # install the agent and connect it to the Orion server
 swiagent 'swiagent' do
-  fqdn 'solaror001.intra.rakuten.co.jp'
+  fqdn 'solarwinds.com'
   username 'admin'
   password '123456'
 end
