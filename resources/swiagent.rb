@@ -33,7 +33,7 @@ action :install do
     bash 'setup swiagent' do
       code "echo $'2\n#{new_resource.fqdn}\n3\n''#{new_resource.port}'$'\n4\n''#{new_resource.username}'$'\n5\n''#{new_resource.password}'$'\n7\n\n' | service swiagentd init"
       sensitive true
-      not_if 'ps aux | grep swiagent | grep -v grep'
+      not_if "grep '#{new_resource.fqdn}' /opt/SolarWinds/Agent/bin/swiagent.cfg"
     end
 
     service 'swiagentd' do

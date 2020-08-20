@@ -1,5 +1,10 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.2.4
+
+- Changed the guard on the resource that configures the swiagent, to not run if the swiagent.cfg has the correct FQDN.
+  This is because it would not update the configuration if the process was running, which is a problem when you want to swap between solarwinds instances.
+
 ## 0.2.3
 
 - Added CONTRIBUTING.md
