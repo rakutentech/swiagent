@@ -1,6 +1,6 @@
 require 'chefspec_helper'
 
-describe 'swiagent::install_swiagent' do
+describe 'solarwinds::install_swiagent_http' do
   let(:chef_run) do
     chef_run = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '18.04', step_into: ['swiagent'])
     chef_run.converge(described_recipe)

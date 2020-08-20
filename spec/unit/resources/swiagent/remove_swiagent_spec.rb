@@ -1,6 +1,6 @@
 require 'chefspec_helper'
 
-describe 'swiagent::remove_swiagent' do
+describe 'solarwinds::remove_swiagent' do
   let(:chef_run) do
     chef_run = ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '18.04', step_into: ['swiagent'])
     chef_run.converge(described_recipe)

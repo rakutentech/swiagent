@@ -1,0 +1,2 @@
+name 'solarwinds'
+depends 'swiagent'

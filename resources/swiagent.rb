@@ -2,21 +2,25 @@ resource_name :swiagent
 
 property :fqdn, String, required: true
 property :port, Integer, default: 17778
+property :ssl, [ true, false ], required: true, default: true
 property :username, String, desired_state: false, identity: true
 property :password, String, desired_state: false, sensitive: true
 
+
 action :install do
+  url = "http#{ 's' if new_resource.ssl }://#{new_resource.fqdn}"
+
   case node['platform']
   when 'ubuntu'
     apt_repository 'solarwinds' do
       components   ['swiagent']
       distribution 'ubuntu-14'
       trusted      true
-      uri          "https://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path="
+      uri          "#{url}/Orion/AgentManagement/LinuxPackageRepository.ashx?path="
     end
   when 'centos'
     yum_repository 'solarwinds' do
-      baseurl "https://#{new_resource.fqdn}/Orion/AgentManagement/LinuxPackageRepository.ashx?path=/dists/centos-5/$basearch"
+      baseurl "#{url}/Orion/AgentManagement/LinuxPackageRepository.ashx?path=/dists/centos-5/$basearch"
       description 'SolarWinds Agent'
       enabled true
       gpgcheck false

@@ -1,8 +1,8 @@
 # swiagent Cookbook CHANGELOG
 
-## 0.1.7
+## 0.2.0
 
-- Changed the repo URL to use https
+- Updated the swiagent resource with a new option 'ssl' in order to support http or https URIs
 
 ## 0.1.6
 

@@ -5,7 +5,7 @@ license 'Apache-2.0'
 description 'Installs/Configures swiagent'
 long_description 'Installs/Configures swiagent'
 
-version '0.1.7'
+version '0.2.0'
 
 source_url 'https://github.com/rolffujino/swiagent'
 issues_url 'https://github.com/rolffujino/swiagent/issues'

@@ -4,5 +4,5 @@ source 'https://supermarket.chef.io'
 metadata
 
 group :integration do
-  cookbook 'swiagent', path: 'spec/fixtures/cookbooks/swiagent'
+  cookbook 'solarwinds', path: 'spec/fixtures/cookbooks/solarwinds'
 end
