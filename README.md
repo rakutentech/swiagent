@@ -16,12 +16,13 @@ This cookbook provides a resource to download and install the swiagent from Sola
 
 ### Properties
 
-| Properties | Description              | Type    | Values and Default                                   |
-| ---------- | -------------------------| --------| ---------------------------------------------------- |
-| fqdn       | FQDN of the Orion server | String  | Required, no default                                 |
-| port       | Port for swiagent to use | Integer | Required, default is 17778                           |
-| username   | Orion admin username     | String  | Desired_state is false, identity is true, no default |
-| password   | Orion admin password     | String  | Desired_state is false, sensitve is true, no default |
+| Properties | Description                  | Type    | Values and Default                                   |
+| ---------- | -----------------------------| --------| ---------------------------------------------------- |
+| fqdn       | FQDN of the Orion server     | String  | Required, no default                                 |
+| port       | Port for swiagent to use     | Integer | Required, default is 17778                           |
+| ssl        | Use SSL (HTTPS) for repo URI | Boolean | Required, default is true                            |
+| username   | Orion admin username         | String  | Desired_state is false, identity is true, no default |
+| password   | Orion admin password         | String  | Desired_state is false, sensitve is true, no default |
 
 ### Example Usage
 

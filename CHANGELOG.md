@@ -1,5 +1,9 @@
 # swiagent Cookbook CHANGELOG
 
+## 0.2.1
+
+- Updated the README to contain documentation for the new 'ssl' option
+
 ## 0.2.0
 
 - Updated the swiagent resource with a new option 'ssl' in order to support http or https URIs
